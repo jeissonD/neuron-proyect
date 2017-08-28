@@ -1,6 +1,7 @@
 <template>
   <div>
 		<app-header></app-header>
+		<router-view></router-view>
 		<ninjas v-bind:ninjas="ninjas"></ninjas>
 		<app-footer></app-footer>
   </div>
@@ -10,12 +11,14 @@
 	import Ninjas from './components/Ninjas.vue';
 	import Header from './components/Header.vue';
 	import Footer from './components/Footer.vue';
+	import ShowBlogs from './components/ShowBlogs.vue';
 
 	export default {
 		components:{
 			'ninjas' : Ninjas,
 			'app-header' : Header,
-			'app-footer' : Footer
+			'app-footer' : Footer,
+			'show-blogs' : ShowBlogs
 		},
 		name: 'app',
 		data () {

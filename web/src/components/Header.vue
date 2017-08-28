@@ -1,19 +1,20 @@
 <template>
 	<header>
-		<h1>{{title}}</h1>
+		<nav>
+			<ul>
+				<li>
+					<router-link to="/">Blogs</router-link>
+				</li>
+				<li>
+					<router-link to="/add">add Blog</router-link>
+				</li>
+			</ul>
+		</nav>
 	</header>
 </template>
 
 <script>
-	
-export default {
-  name: 'app',
-  data () {
-    return {
-			title : 'title'
-    }
-  }
-}
+	export default {}
 </script>
 
 <style lang="scss" scoped>
