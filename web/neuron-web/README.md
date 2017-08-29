@@ -1,6 +1,6 @@
-# neuron
+# neuron-web
 
-> universitary plataform 
+> A Vue.js project
 
 ## Build Setup
 
